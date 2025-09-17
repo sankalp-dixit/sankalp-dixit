@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Urban Men's Fashion</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #eef1f4;
+      color: #333;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0d6efd, #495057);
+      color: #fff;
+      padding: 70px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+    .hero .btn {
+      padding: 12px 28px;
+      font-size: 1.1rem;
+    }
+    .product-img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+    .card {
+      border: none;
+      border-radius: 12px;
+      transition: transform 0.2s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#">Urban Fashion</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#collection">Collection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#connect">Connect</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <h1>Urban Men's Clothing</h1>
+    <p>Stylish apparel for the modern man – shirts, denim & more</p>
+    <a href="#collection" class="btn btn-light text-primary fw-semibold">Explore Now</a>
+  </section>
+
+  <!-- Products -->
+  <section id="collection" class="container py-5">
+    <h2 class="mb-4 text-center text-primary">Our Collection</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80"
+            class="product-img"
+            alt="Casual Shirt"
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title">Casual Shirt</h5>
+            <p class="card-text small">Breathable cotton fabric for everyday comfort.</p>
+            <p class="fw-bold text-primary">₹799</p>
+            <button class="btn btn-outline-primary w-100">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="https://www.urbanofashion.com/cdn/shop/files/epsjean-iceblu-1.png?v=1727019897"
+            class="product-img"
+            alt="Slim Jeans"
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title">Slim Jeans</h5>
+            <p class="card-text small">Stretchable fit jeans for a modern look.</p>
+            <p class="fw-bold text-primary">₹1199</p>
+            <button class="btn btn-outline-primary w-100">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1468359601543-843bfaefad73?auto=format&fit=crop&w=400&q=80"
+            class="product-img"
+            alt="Denim Jacket"
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title">Denim Jacket</h5>
+            <p class="card-text small">Timeless outerwear suitable for all seasons.</p>
+            <p class="fw-bold text-primary">₹1499</p>
+            <button class="btn btn-outline-primary w-100">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="connect" class="container py-5">
+    <h2 class="mb-4 text-center text-primary">Get in Touch</h2>
+    <form class="mx-auto" style="max-width: 420px;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter full name" />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea id="message" class="form-control" rows="3" placeholder="Write your message..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="mb-0">© 2025 Urban Fashion. Crafted with style.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
